@@ -107,13 +107,13 @@ public class LoginActivity extends AppCompatActivity {
                 }else if (strPassword.length() == 0) {
                     Toast.makeText(getApplicationContext(), "Enter Password", Toast.LENGTH_LONG).show();
                 }else if (isInternetPresent) {
-                    new Load().execute();
+                    //new Load().execute();
                 } else {
                     Toast.makeText(getApplicationContext(), "NO INTERNET CONNECTION", Toast.LENGTH_LONG).show();
                 }
-                /*Intent i = new Intent(RegisterActivity.this, LoginpassActivity.class);
+                Intent i = new Intent(LoginActivity.this, ResourcesActivity.class);
                 startActivity(i);
-                finish();*/
+                finish();
             }
 
         });
