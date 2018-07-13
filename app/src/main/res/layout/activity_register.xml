@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="08dp"
+        android:layout_marginTop="08dp"
+        android:layout_marginRight="08dp"
+        android:layout_marginBottom="08dp">
+
+        <RelativeLayout
+            android:id="@+id/rl_header"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#fff">
+
+            <TextView
+                android:id="@+id/txtreg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Register to continue"
+                android:gravity="center"
+                android:layout_marginTop="16dp"
+                android:textSize="20sp"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/txtreg"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="08dp">
+
+                <EditText
+                    android:id="@+id/edtname"
+                    android:layout_width="match_parent"
+                    android:layout_height="43dp"
+                    android:hint="Name"
+                    android:paddingLeft="08dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:inputType="textPersonName"
+                    android:imeOptions="actionNext"/>
+
+                <EditText
+                    android:id="@+id/edtpass"
+                    android:layout_width="match_parent"
+                    android:layout_height="43dp"
+                    android:layout_below="@+id/edtname"
+                    android:hint="Password"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:inputType="textPassword"
+                    android:paddingLeft="08dp"
+                    android:imeOptions="actionNext"/>
+
+                <EditText
+                    android:id="@+id/edtemail"
+                    android:layout_width="match_parent"
+                    android:layout_height="43dp"
+                    android:layout_below="@+id/edtpass"
+                    android:hint="Email"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:inputType="textEmailAddress"
+                    android:paddingLeft="08dp"
+                    android:imeOptions="actionNext"/>
+
+                <EditText
+                    android:id="@+id/edtmobile"
+                    android:layout_width="match_parent"
+                    android:layout_height="43dp"
+                    android:layout_below="@+id/edtemail"
+                    android:hint="mobile"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginTop="16dp"
+                    android:inputType="number"
+                    android:maxLength="10"
+                    android:paddingLeft="08dp"
+                    android:imeOptions="actionNext"/>
+
+                <EditText
+                    android:id="@+id/edtcity"
+                    android:layout_width="match_parent"
+                    android:layout_height="43dp"
+                    android:layout_below="@+id/edtmobile"
+                    android:hint="City"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginTop="16dp"
+                    android:inputType="text"
+                    android:paddingLeft="08dp"
+                    android:imeOptions="actionDone"/>
+
+                <Button
+                    android:id="@+id/btnreg"
+                    android:layout_width="352dp"
+                    android:layout_height="48dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_below="@+id/edtcity"
+                    android:layout_centerHorizontal="true"
+                    android:background="#edb48b"
+                    android:text="Register"
+                    android:textColor="#FFF"/>
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</ScrollView>

@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true">
+
+        <RelativeLayout
+            android:id="@+id/rltinput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/textinput"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="16dp"
+                android:hint="Enter Text to Encrypt" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rltpass"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/rltinput"
+            android:layout_marginTop="10dp">
+
+            <EditText
+                android:id="@+id/edtpass"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:inputType="textPassword"
+                android:hint="Enter Encrypt Password" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rltoutput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/rltpass"
+            android:layout_marginTop="10dp">
+
+            <TextView
+                android:id="@+id/textoutput"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rltencrypt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/rltoutput"
+            android:layout_marginTop="10dp">
+
+            <Button
+                android:id="@+id/btnencrypt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:background="@color/colorbrown"
+                android:text="encrypt " />
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/rltdecrypt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/rltencrypt"
+            android:layout_marginTop="20dp">
+
+            <Button
+                android:id="@+id/btndecrypt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:background="@color/colorbrown"
+                android:layout_marginBottom="08dp"
+                android:text="decrypt" />
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+</ScrollView>

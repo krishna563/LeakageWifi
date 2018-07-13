@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center">
+
+    <RelativeLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="08dp"
+        android:layout_marginTop="08dp"
+        android:layout_marginRight="08dp"
+        android:layout_marginBottom="08dp">
+
+        <RelativeLayout
+            android:id="@+id/rltimg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+
+            <ImageView
+
+                android:id="@+id/imagelogo"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:background="@mipmap/user" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rltuser"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rltimg"
+            android:layout_marginTop="20dp">
+
+
+            <EditText
+                android:id="@+id/edtusername"
+                android:layout_width="match_parent"
+                android:layout_height="43dp"
+                android:hint="User name"
+                android:paddingLeft="08dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:inputType="textPersonName"
+                android:imeOptions="actionNext"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rltpass"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rltuser"
+            android:layout_marginTop="20dp">
+
+
+            <EditText
+                android:id="@+id/edtpassword"
+                android:layout_width="match_parent"
+                android:layout_height="43dp"
+                android:layout_marginTop="14dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:hint="Password"
+                android:imeOptions="actionDone"
+                android:inputType="textPassword"
+                android:paddingLeft="08dp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/buttonlogin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rltpass"
+            android:layout_marginTop="40dp">
+
+
+            <Button
+                android:id="@+id/btnlogin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Login"
+                android:textSize="20sp"
+                android:background="@color/colorbrown"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:textAllCaps="false"/>
+        </RelativeLayout>
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/buttonlogin"
+        android:layout_marginTop="20dp">
+
+    <TextView
+        android:id="@+id/txtnewuser"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="New user?"
+        android:gravity="center"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp" />
+
+    </RelativeLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/TextView01"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:textColor="@color/colorBlue"
+        android:text="@string/hello" />
+
+    <RelativeLayout
+        android:id="@+id/rltstorage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+
+    <Button
+        android:id="@+id/encrybtn"
+        android:layout_width="352dp"
+        android:layout_height="48dp"
+        android:background="#edb48b"
+        android:text="Storage Encrypt"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="08dp"
+        android:textColor="#FFF"/>
+    </RelativeLayout>
+
+</RelativeLayout>

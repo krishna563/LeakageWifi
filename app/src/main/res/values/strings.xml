@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Privacy Leakage On WIFI</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello">FILE SYSTEM I/O</string>
+</resources>
